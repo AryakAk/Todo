@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Salsa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&family=Salsa&display=swap');
+
+body {
+    /* font-family: "Salsa", cursive; */
+    background: #2d4b70 !important
+}
+
+#textbox {
+    border: 2px solid #585858;
+    font-size: 20px;
+    font-family: "Salsa", cursive;
+    letter-spacing: 2px;
+    text-align: center;
+    margin-right: 1px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+#box {
+    box-shadow: 0px 0px 8px #ffffff;
+}
+
+.form-control:focus {
+    box-shadow: inset 0px 0px 4px #000000 !important;
+}
+
+.form-control:focus #add-user {
+    box-shadow: inset 0px 0px 4px #ffffff !important;
+}
+
+#add-user {
+    color: #ffffff;
+    background-color: #585858;
+    box-shadow: none;
+    text-shadow: none;
+    font-weight: 600;
+    border: none;
+    font-size: 20px;
+    border-left: none;
+    text-shadow: 0px 2px 3px #000000;
+}
+
+.btn:focus {
+    color: #585858 !important;
+    background: #fff !important;
+    font-size: 20px;
+    border: 2px solid #585858 !important;
+    border-left: none !important;
+    text-shadow: none !important;
+}
+
+#pen {
+    background-color: #087d83;
+    padding: 6px;
+    color: #fff;
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    font-size: 18px;
+    box-shadow: 0px 0px 4px black;
+    margin-right: 10px;
+}
+
+#delete {
+    background-color: #700101;
+    padding: 6px 10px;
+    text-align: center;
+    position: relative;
+    color: #fff;
+    border: 1px solid #fdfdfd;
+    border-radius: 8px;
+    font-size: 18px;
+    margin-right: 10px;
+    box-shadow: 0px 0px 4px black;
+}
+
+thead th,
+#theadth {
+    text-align: center;
+    font-family: "Philosopher", sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 400;
+    font-size: 20px;
+    font-weight: 600 !important;
+}
+
+tbody tr {
+    text-align: center;
+    font-family: "Salsa", cursive;
+    color: #fff;
+    letter-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.table>:not(:last-child)>:last-child>* {
+    border-bottom-color: #b2b4e9 !important;
+    font-weight: 500;
+}
+
+.table {
+    border: 1px solid #bfbfbf;
+}
+
+input[type="text"] {
+
+    color: #923535;
+
+}
+
+/* popup css start */
+.overlay {
+    position: absolute;
+    top: 41px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(60 60 60 / 0%);
+    transition: opacity 200ms;
+    opacity: 1;
+}
+
+
+.popup {
+    margin: 70px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    z-index: 9;
+    width: 30%;
+    position: relative;
+    transition: all .5s ease-in-out;
+}
+
+.popup h2 {
+    margin-top: 0;
+    color: #700101;
+    font-family: "Philosopher", sans-serif;
+    text-align: center;
+}
+
+.popup #close {
+    position: absolute;
+    top: 5px;
+    right: 30px;
+    transition: all 100ms;
+    font-size: 35px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #6c757d;
+}
+
+.popup #close:hover {
+    color: #06D85F;
+}
+
+
+.popup .content {
+    max-height: 30%;
+    font-family: "Salsa", cursive;
+    text-align: center;
+    overflow: auto;
+}
+
+@media screen and (max-width: 700px) {
+    .box {
+        width: 70%;
+    }
+
+    .popup {
+        width: 70%;
+    }
+}
+
+/* popup css end */
